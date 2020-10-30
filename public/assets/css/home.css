@@ -10,7 +10,7 @@ h2 {
 }
 
 nav {
-    background-color: #B2DBD5;
+    /* background-color: #B2DBD5; */
 }
 
 .contact {
@@ -58,6 +58,11 @@ nav {
     
 }
 
+/* class added when user scrolls from top of page */
+.not-transparent {
+    background-color: white;
+}
+
 .project-brief {
     position: absolute;
     right: 0;
@@ -87,4 +92,36 @@ nav {
     margin: 0 auto;
     margin-bottom: 20vh;
     width: 60%;
+}
+
+.skill {
+    width: 30%;
+    /* background-color: salmon; */
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 17px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.skill-bar-filled {
+    height: 100%;
+    background-color: black;
+}
+
+.skill-percent {
+    float: right;
+}
+
+.skill-type {
+    margin: 0;
+    font-size: 13px;
+}
+
+.skills-container {
+    width: 60%;
+    margin: 10% auto;
 }
