@@ -1,6 +1,12 @@
 body {
     /* background-color: #2B616D; */
     /* background-color: #FFF; */
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: "Roboto", "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 550;
 }
 
 nav {
@@ -65,7 +71,6 @@ nav {
 .project-btn {
     background-color: #98FF98;
     width: 35%;
-    height: 50px;
     border-radius: 30px;
 }
 
