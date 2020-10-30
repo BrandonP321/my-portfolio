@@ -4,8 +4,8 @@ function loadSkills() {
         // grab percent value from span element
         const percent = $(this).parent().siblings()[0].children[0].getAttribute('data-percent')
         console.log(percent)
-        // set the skill bar's filled portion to have width equal to percent
-        $(this).css('width', `${percent}%`)
+        // create animation to load in skill bars
+        $(this).animate({width: `${percent}%`}, 1000)
     })
 }
 

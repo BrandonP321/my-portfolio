@@ -74,7 +74,7 @@ nav {
 }
 
 .project-btn {
-    background-color: #98FF98;
+    background-color: #59b7ff;
     width: 35%;
     border-radius: 30px;
 }
@@ -109,6 +109,7 @@ nav {
 
 .skill-bar-filled {
     height: 100%;
+    width: 0;
     background-color: black;
 }
 
