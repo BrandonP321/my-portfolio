@@ -1,0 +1,67 @@
+body {
+    /* background-color: #2B616D; */
+    /* background-color: #FFF; */
+}
+
+nav {
+    background-color: #B2DBD5;
+}
+
+.contact {
+    background-color: #B2DBD5;
+    padding: 1%;
+}
+
+.content {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.hero {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 56px;
+    padding: 1%;
+}
+
+.heroImg {
+    width: 100%;
+}
+
+.hero-text {
+    width: 40%;
+}
+
+.navbar-nav {
+    
+}
+
+.project-brief {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: 50%;
+    background-color: white;
+    padding: 3%;
+    box-shadow: 1px 11px 17px rgba(0, 0, 0, 0.4);
+}
+
+.project-btn {
+    background-color: #98FF98;
+    width: 35%;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.project-btns {
+    margin: 0 auto;
+}
+
+.project-img {
+    width: 60%;
+}
+
+.project-container {
+    position: relative;
+    margin-bottom: 20vh;
+}
