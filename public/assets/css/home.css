@@ -177,6 +177,7 @@ nav {
 
     .navbar-nav {
         padding: 1rem;
+        box-shadow: 1px 14px 15px rgba(0, 0, 0, 0.1);
     }
 
     .navbar-toggler {
