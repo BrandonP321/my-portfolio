@@ -145,3 +145,52 @@ nav {
 .skills-stretch {
     background-color: #dbc596;
 }
+
+@media screen and (max-width: 1400px) {
+    .contact {
+        width: 100%;
+    }
+
+    .project-container {
+        width: 95%;
+    }
+
+    .skills-container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .project-brief {
+        width: 95%;
+        top: 90%;
+    }
+
+    .project-container {
+        margin-bottom: 40vh;
+    }
+
+    .project-img {
+        width: 95%;
+    }
+
+    .skills-flex {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) and  (max-height: 700px) {
+    .project-container {
+        margin-bottom: 60vh;
+    }
+}
+
+@media screen and (max-width: 350px) and (max-height: 700px) {
+    .project-container {
+        margin-bottom: 65vh;
+    }
+}
