@@ -5,7 +5,7 @@ function loadSkills() {
         // grab percent value from span element
         const percent = $(this).parent().siblings()[0].children[0].getAttribute('data-percent')
         // create animation to load in skill bars
-        $(this).animate({ width: `${percent}%` }, 1000)
+        $(this).animate({ width: `${percent}%` }, 1500)
     })
 
     // change skill percentage text for each skill
@@ -17,7 +17,7 @@ function loadSkills() {
         // set starting percent
         let currentPercent = 0;
         // calculate interval speed to reach the given percent in 1000ms
-        const intervalTime = 1000 / percent
+        const intervalTime = 1500 / percent
         // create interval to count from 0 to skill's percent
         const percentInterval = setInterval(function () {
             // if current percent equals skill's percent, clear interval
@@ -41,18 +41,24 @@ $(window).on('scroll', function () {
         // first check that white bg is not already shown
         if (!navBgIsShown) {
             navBgIsShown = true
-            $('#header-bg').animate({ height: '56px' }, 500)
-            // make navbar text black
+            $('#header-bg').animate({ height: '56px' }, 500, function () {
+                // make navbar text black
+                $('nav').removeClass('navbar-dark')
+                $('nav').addClass('navbar-light')
+            })
+            // ensure that text is changed to black if user scrolls to quickly
             $('nav').removeClass('navbar-dark')
             $('nav').addClass('navbar-light')
         }
     } else {
         // else remove class from navbar if white bg is already shown
         if (navBgIsShown) {
-            $('#header-bg').animate({ height: '0' }, 500, function() {
+            $('#header-bg').animate({ height: '0' }, 500, function () {
                 // make navbar text white
                 $('nav').removeClass('navbar-light')
                 $('nav').addClass('navbar-dark')
+                // also set nav showing to false in here to ensure font gets changed accordingly
+                navBgIsShown = false
             })
             navBgIsShown = false
         }
