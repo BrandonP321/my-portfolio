@@ -10,6 +10,8 @@ h2 {
 }
 
 nav {
+    position: relative;
+    color: white;
     /* background-color: #B2DBD5; */
 }
 
@@ -31,20 +33,21 @@ nav {
     /* width: 60%; */
 }
 
+#header-bg {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: white;
+}
+
 .hero {
     /* width: 70%;
     margin: 0 auto;
     margin-top: 56px;
     padding: 1%; */
 
-}
-
-.heroImg {
-    width: 100%;
-}
-
-.hero-text {
-    width: 40%;
 }
 
 .hero-video-container {
@@ -56,11 +59,6 @@ nav {
 
 .navbar-nav {
     
-}
-
-/* class added when user scrolls from top of page */
-.not-transparent {
-    background-color: white;
 }
 
 .project-brief {
