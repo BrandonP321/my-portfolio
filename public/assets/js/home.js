@@ -1,11 +1,32 @@
 // function to dynamically load in skill bars
 function loadSkills() {
-    $('.skill-bar-filled').each(function() {
+    $('.skill-bar-filled').each(function () {
         // grab percent value from span element
         const percent = $(this).parent().siblings()[0].children[0].getAttribute('data-percent')
-        console.log(percent)
         // create animation to load in skill bars
-        $(this).animate({width: `${percent}%`}, 1000)
+        $(this).animate({ width: `${percent}%` }, 1000)
+    })
+
+    $('.skill-percent').each(function (event) {
+        // store current skill
+        const skill = $(this)
+        // grab percent value from element
+        const percent = $(this).data('percent')
+        // set starting percent
+        let currentPercent = 0;
+        // calculate interval speed to reach the given percent in 1000ms
+        const intervalTime = 1000 / percent
+        console.log(currentPercent == percent)
+        // create interval to count from 0 to skill's percent
+        const percentInterval = setInterval(function () {
+            if (currentPercent == percent) {
+                clearInterval(percentInterval)
+            } else {
+                console.log(currentPercent, percent)
+                currentPercent += 1
+                skill.text(`${currentPercent}%`)
+            }
+        }, intervalTime)
     })
 }
 
