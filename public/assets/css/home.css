@@ -58,6 +58,10 @@ nav {
     height: 100%;
 }
 
+.navbar-collapse {
+    /* background-color: white; */
+}
+
 .navbar-nav {
     
 }
@@ -160,6 +164,26 @@ nav {
     }
 }
 
+/* media query specifically for navbar when links are moved to hidden */
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .navbar-brand {
+        margin-left: 1rem;
+    }
+
+    .navbar-nav {
+        padding: 1rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 1rem;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .project-brief {
         width: 95%;
@@ -186,6 +210,12 @@ nav {
 @media screen and (max-width: 400px) and  (max-height: 700px) {
     .project-container {
         margin-bottom: 60vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project-btn {
+        width: 45%;
     }
 }
 

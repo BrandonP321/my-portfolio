@@ -45,6 +45,8 @@ $(window).on('scroll', function () {
                 // make navbar text black
                 $('nav').removeClass('navbar-dark')
                 $('nav').addClass('navbar-light')
+                // make mobile navbar collapse bg white
+                $('.navbar-collapse').addClass('bg-white')
             })
             // ensure that text is changed to black if user scrolls to quickly
             $('nav').removeClass('navbar-dark')
@@ -57,6 +59,8 @@ $(window).on('scroll', function () {
                 // make navbar text white
                 $('nav').removeClass('navbar-light')
                 $('nav').addClass('navbar-dark')
+                // make mobile navbar collapse transparent
+                $('.navbar-collapse').removeClass('bg-white')
                 // also set nav showing to false in here to ensure font gets changed accordingly
                 navBgIsShown = false
             })
